@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'Page2.dart';
+import 'page2.dart';
+import 'Login.dart'; 
 
 void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
-  home: home(),
+  home: Login(), // Mengatur Login sebagai halaman awal
 ));
 
 class home extends StatelessWidget {
@@ -22,7 +23,6 @@ class home extends StatelessWidget {
           )
         ),
 
-
         child: Stack(
           alignment: Alignment.center ,
           children: <Widget>[
@@ -38,7 +38,7 @@ class home extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      
+
                       CircleAvatar(
                         radius: 100.0,
                         backgroundImage:
